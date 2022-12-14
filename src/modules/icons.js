@@ -1,13 +1,13 @@
 export default function displayColorIcons() {
   const allListButtons = document.querySelector(".left-side");
 
-  const dashDefaultSrc = "/dist/images/dashboard.png";
-  const walletDefaultSrc = "/dist/images/wallet.png";
-  const accountsDefaultSrc = "/dist/images/account.png";
-  const reportsDefaultSrc = "/dist/images/financial.png";
-  const settingsDefaultSrc = "/dist/images/settings.png";
-  const notificationDefaultSrc = "/dist/images/notification.png";
-  const helpDefaultSerc = "/dist/images/help.png";
+  const dashDefaultSrc = "./images/dashboard.png";
+  const walletDefaultSrc = "./images/wallet.png";
+  const accountsDefaultSrc = "./images/account.png";
+  const reportsDefaultSrc = "./images/financial.png";
+  const settingsDefaultSrc = "./images/settings.png";
+  const notificationDefaultSrc = "./images/notification.png";
+  const helpDefaultSerc = "./images/help.png";
 
   const dashImg = document.querySelector(".dashImg");
   const walletImg = document.querySelector(".walletImg");
@@ -20,7 +20,7 @@ export default function displayColorIcons() {
   allListButtons.addEventListener("click", (e) => {
     // Dashboard button
     if (e.target.classList.contains("dashboardBtn")) {
-      dashImg.setAttribute("src", "/dist/images/dashboard2.png");
+      dashImg.setAttribute("src", "./images/dashboard2.png");
       walletImg.src = walletDefaultSrc;
       accountsImg.src = accountsDefaultSrc;
       reportsImg.src = reportsDefaultSrc;
@@ -31,7 +31,7 @@ export default function displayColorIcons() {
 
     // Wallet button
     if (e.target.classList.contains("walletBtn")) {
-      walletImg.setAttribute("src", "/dist/images/wallet2.png");
+      walletImg.setAttribute("src", "./images/wallet2.png");
       dashImg.src = dashDefaultSrc;
       accountsImg.src = accountsDefaultSrc;
       reportsImg.src = reportsDefaultSrc;
@@ -42,7 +42,7 @@ export default function displayColorIcons() {
 
     // Accounts button
     if (e.target.classList.contains("accountsBtn")) {
-      accountsImg.setAttribute("src", "/dist/images/account2.png");
+      accountsImg.setAttribute("src", "./images/account2.png");
       dashImg.src = dashDefaultSrc;
       walletImg.src = walletDefaultSrc;
       reportsImg.src = reportsDefaultSrc;
@@ -53,7 +53,7 @@ export default function displayColorIcons() {
 
     // Reports button
     if (e.target.classList.contains("reportsBtn")) {
-      reportsImg.setAttribute("src", "/dist/images/financial2.png");
+      reportsImg.setAttribute("src", "./images/financial2.png");
       dashImg.src = dashDefaultSrc;
       walletImg.src = walletDefaultSrc;
       accountsImg.src = accountsDefaultSrc;
@@ -64,7 +64,7 @@ export default function displayColorIcons() {
 
     // Settings button
     if (e.target.classList.contains("settingsBtn")) {
-      settingsImg.setAttribute("src", "/dist/images/settings2.png");
+      settingsImg.setAttribute("src", "./images/settings2.png");
       dashImg.src = dashDefaultSrc;
       walletImg.src = walletDefaultSrc;
       reportsImg.src = reportsDefaultSrc;
@@ -75,7 +75,7 @@ export default function displayColorIcons() {
 
     // Notification button
     if (e.target.classList.contains("notificationBtn")) {
-      notificationImg.setAttribute("src", "/dist/images/notification2.png");
+      notificationImg.setAttribute("src", "./images/notification2.png");
       dashImg.src = dashDefaultSrc;
       walletImg.src = walletDefaultSrc;
       reportsImg.src = reportsDefaultSrc;
@@ -86,7 +86,7 @@ export default function displayColorIcons() {
 
     // Help button
     if (e.target.classList.contains("helpBtn")) {
-      helpImg.setAttribute("src", "/dist/images/help2.png");
+      helpImg.setAttribute("src", "./images/help2.png");
       dashImg.src = dashDefaultSrc;
       walletImg.src = walletDefaultSrc;
       accountsImg.src = accountsDefaultSrc;
